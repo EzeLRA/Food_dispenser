@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="381dp"
+        android:layout_height="256dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.059">
+
+        <TextView
+            android:id="@+id/tituloMascota"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:text="Informacion de su Mascota"
+            android:textColor="@color/colorLetras"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre:"
+            android:textColor="@color/colorLetras"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/nombreDeMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese el nombre de su mascota"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorLetras2"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso:"
+            android:textColor="@color/colorLetras"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/listaDePeso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad Promedio:"
+            android:textColor="@color/colorLetras"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/listaEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="377dp"
+        android:layout_height="247dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="0.105">
+
+        <TextView
+            android:id="@+id/tituloRutina"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:text="Programacion de Horarios:"
+            android:textColor="@color/colorLetras"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/proporciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cantidad de Porciones:"
+            android:textColor="@color/colorLetras"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/listaDeProporciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horarios:"
+            android:textColor="@color/colorLetras"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="207dp"
+        android:layout_height="59dp"
+        android:onClick="Enviar"
+        android:text="Establecer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

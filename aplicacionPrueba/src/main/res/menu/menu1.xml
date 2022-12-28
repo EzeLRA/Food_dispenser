@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Mascota"
+        android:title="Datos de la Mascota" />
+    <item
+        android:id="@+id/Preferencias"
+        android:title="Preferencias" />
+    <item
+        android:id="@+id/Historial"
+        android:title="Registro de Actividad" />
+    <item android:title="Actividad del Dispositivo" />
+
+</menu>
